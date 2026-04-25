@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Diciembre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Nieve -->
+  <div class="snow-container"></div>
+
+  <!-- Decoraciones -->
+  <div class="santa">🎅</div>
+  <div class="reindeer">🦌</div>
+
+  <main>
+
+    <!-- INICIO -->
+    <section id="welcome" class="screen active full">
+      <h1>Esta Navidad</h1>
+      <h2>para conocernos un poco mejor</h2>
+      <p>
+        No es un test.<br>
+        No es una encuesta.<br>
+        Solo un espacio bonito para compartir ✨
+      </p>
+      <button id="startBtn">Empezar</button>
+    </section>
+
+    <!-- PREGUNTAS -->
+    <section id="quiz" class="screen">
+      <div class="card">
+        <h3 id="question"></h3>
+        <div id="options"></div>
+        <textarea id="customAnswer" placeholder="Si quieres, escribe aquí..."></textarea>
+        <button id="nextBtn">Siguiente</button>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section id="end" class="screen full">
+      <h2>🎄 Gracias por responder</h2>
+      <p>
+        Que esta Navidad esté llena de<br>
+        detalles lindos y momentos tranquilos 🤍
+      </p>
+      <span class="end-icon">✨🎁✨</span>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
