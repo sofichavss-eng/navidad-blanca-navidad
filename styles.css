@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #0f3d2e, #b11226);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 420px;
+  margin: auto;
+}
+
+/* Pantallas */
+.screen {
+  display: none;
+  padding: 2rem 1.5rem;
+}
+
+.screen.active {
+  display: block;
+}
+
+.full {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Textos */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* Botón */
+button {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 30px;
+  border: none;
+  background: #1f6f54;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #15543f;
+}
+
+/* Tarjeta preguntas */
+.card {
+  background: #fff;
+  color: #333;
+  border-radius: 25px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Opciones */
+.option {
+  background: #f5f5f5;
+  padding: 0.8rem;
+  border-radius: 18px;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+}
+
+.option.selected {
+  background: #1f6f54;
+  color: white;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 15px;
+  resize: none;
+}
+
+/* Santa y Reno */
+.santa, .reindeer {
+  position: fixed;
+  font-size: 3rem;
+  opacity: 0.6;
+}
+
+.santa {
+  top: 20px;
+  right: 20px;
+}
+
+.reindeer {
+  bottom: 20px;
+  left: 20px;
+}
+
+/* Nieve */
+.snow-container span {
+  position: fixed;
+  top: -10px;
+  color: white;
+  animation: fall linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
